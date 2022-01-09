@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -21,7 +22,7 @@ import java.util.Objects;
 public class ShortcutBottomSheet extends BottomSheetDialogFragment {
 
     @Override
-    public View onCreateView(@NonNull  LayoutInflater inflater, @Nullable  ViewGroup container, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull  LayoutInflater inflater, @Nullable  ViewGroup container, @Nullable  Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.bottomsheet_layout, container, false);
         RecyclerView recyclerView = view.findViewById(R.id.recycleView);
 
@@ -33,7 +34,8 @@ public class ShortcutBottomSheet extends BottomSheetDialogFragment {
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recycleView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
         linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-        recyclerView.setLayoutManager(linearLayoutManager);
+        GridLayoutManager manager = new GridLayoutManager(getActivity(), 4);
+        recyclerView.setLayoutManager(manager);
         recyclerView.addItemDecoration(new DividerItemDecoration(Objects.requireNonNull(getActivity()),DividerItemDecoration.VERTICAL));
         MyRecyclerAdapter adapter = new MyRecyclerAdapter();
         recyclerView.setAdapter(adapter);
@@ -65,16 +67,14 @@ public class ShortcutBottomSheet extends BottomSheetDialogFragment {
         @Override
         public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
             MyViewHolder myViewHolder = (MyViewHolder) holder;
-            myViewHolder.index.setText(mData.get(position)+"");
-//            myViewHolder.name.setText(mData.get(position)+"");
+//            myViewHolder.index.setText(mData.get(position)+"");
+            myViewHolder.name.setText(mData.get(position)+"");
         }
 
         @Override
         public int getItemCount() {
             return mData == null ? 0 :mData.size();
         }
-
-
 
         public static class MyViewHolder extends RecyclerView.ViewHolder{
 
