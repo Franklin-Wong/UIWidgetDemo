@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ShortcutBottomSheet bottomSheet;
 
-    private String stringTest = new String();
+    private String stringTest = " ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
