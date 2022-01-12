@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ShortcutBottomSheet bottomSheet;
 
-    private String stringTest = "";
+    private String stringTest = new String();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Todo
                 showBottomSheet();
+                stringTest = "OK";
             }
         });
     }
