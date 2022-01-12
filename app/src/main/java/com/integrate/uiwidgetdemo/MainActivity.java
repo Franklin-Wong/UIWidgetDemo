@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity {
                 // Todo
                 showBottomSheet();
 
-
                 stringTest = "Master0000";
                 stringDev = "Dev1111";
+
             }
         });
     }
