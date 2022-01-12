@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private String stringTest = " ";
     private String stringDev = " ";
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
