@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void showBottomSheet() {
         bottomSheet = new ShortcutBottomSheet();
-        bottomSheet.show(getSupportFragmentManager(), "bottomSheet");
+        bottomSheet.show(getSupportFragmentManager(), "bottomSheetFragment");
         bottomSheet.setCancelable(false);
 
     }
