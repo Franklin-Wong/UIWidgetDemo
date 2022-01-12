@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private ShortcutBottomSheet bottomSheet;
 
     private String stringTest;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         showBottom.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // Todo
                 showBottomSheet();
             }
         });
