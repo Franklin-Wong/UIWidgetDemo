@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ShortcutBottomSheet bottomSheet;
 
-    private String string;
+    private String stringTest;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
