@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Todo
                 showBottomSheet();
-                stringTest = "123";
+                stringTest = "123master";
             }
         });
     }
