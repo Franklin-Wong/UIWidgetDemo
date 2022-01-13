@@ -11,10 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private ShortcutBottomSheet bottomSheet;
 
     private String stringTest = " ";
-<<<<<<< HEAD
-=======
 
->>>>>>> 895d61e (提交)
     private String stringDev = " ";
 
 
@@ -29,7 +26,10 @@ public class MainActivity extends AppCompatActivity {
                 // Todo
                 showBottomSheet();
 
+
                 stringTest = "Dev1111";
+
+                stringDev = "Dev1111";
 
 
             }
