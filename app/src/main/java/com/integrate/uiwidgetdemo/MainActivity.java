@@ -26,9 +26,10 @@ public class MainActivity extends AppCompatActivity {
                 showBottomSheet();
 
 
+
                 stringTest = "Dev1111";
 
-                stringTest = "Master0000";
+
 
 
             }
