@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
 
     private String stringTest = " ";
 
+    private String stringDev = " ";
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +26,11 @@ public class MainActivity extends AppCompatActivity {
                 // Todo
                 showBottomSheet();
 
+
                 stringTest = "Dev1111";
+
+                stringDev = "Dev1111";
+
 
             }
         });
