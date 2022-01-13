@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private ShortcutBottomSheet bottomSheet;
 
     private String stringTest = " ";
+    private String stringDev = " ";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,12 +24,9 @@ public class MainActivity extends AppCompatActivity {
                 // Todo
                 showBottomSheet();
 
-
-<<<<<<< HEAD
                 stringTest = "Dev1111";
-=======
+
                 stringTest = "Master0000";
->>>>>>> 6a70f23 (提交)
 
             }
         });
