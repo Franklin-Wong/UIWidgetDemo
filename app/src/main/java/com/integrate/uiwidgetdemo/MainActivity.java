@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
                 // Todo
                 showBottomSheet();
 
+
                 stringTest = "Dev1111";
 
             }
