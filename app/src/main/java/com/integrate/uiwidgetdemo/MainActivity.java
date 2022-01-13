@@ -24,7 +24,11 @@ public class MainActivity extends AppCompatActivity {
                 showBottomSheet();
 
 
+<<<<<<< HEAD
                 stringTest = "Dev1111";
+=======
+                stringTest = "Master0000";
+>>>>>>> 6a70f23 (提交)
 
             }
         });
